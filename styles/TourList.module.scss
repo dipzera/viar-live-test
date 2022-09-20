@@ -1,0 +1,11 @@
+.tours { }
+
+.tours-title {
+	font-size: 30px;
+}
+
+.tours-list {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(275px, 1fr));
+	grid-gap: 1.5em;
+}

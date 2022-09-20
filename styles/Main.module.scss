@@ -1,0 +1,112 @@
+.main {
+  width: 100vw;
+  height: calc(100vh + 1px);
+  min-height: 450px;
+  background: url(/images/sky.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+  margin-top: -196px;
+  position: relative;
+
+	&-description {
+		width: 100%;
+		position: absolute;
+		top: 52%;
+		left: 50%;
+		padding: 0 40px;
+		-webkit-transform: translate(-50%, -50%);
+		transform: translate(-50%, -50%);
+		text-align: center;
+		color: #fff;
+
+
+		&__headline {
+			font-size: 54px;
+			font-weight: 300;
+			padding-bottom: 8px;
+
+			margin: 20px 0 10px;
+			line-height: 1.1;
+		}
+
+		&__text {
+			font-size: 24px;
+			font-weight: 300;
+
+			margin: 0 0 10px;
+		}
+
+		&__footer {
+			padding-top: 85px;
+			margin: 0 0 10px;
+		}
+
+		&__button {
+			position: relative;
+
+			padding: 18px 36px 18px 58px;
+			background-color: #0081ff;
+
+			font-size: 18px;
+			color: #fff;
+
+			border-radius: 50px;
+			border-color: #0081ff;
+
+			transition: all .2s;
+
+			&:hover {
+				color: inherit;
+				background: #0c6ac6;
+				border-color: #0c6ac6;
+			}
+
+			&:before {
+				content: '';
+				display: block;
+				position: absolute;
+				background-image: url(/images/enter.png);
+				background-size: 26px 26px;
+				width: 26px;
+				height: 26px;
+				left: 18px;
+				top: 16px;
+			}
+		}
+	}
+}
+
+
+.upload-button {
+	position: relative;
+
+	padding: 10px 22px 10px 40px;
+	background-color: #0081ff;
+
+	font-size: 14px;
+	color: #fff;
+
+	border-radius: 50px;
+	border-color: #0081ff;
+
+	transition: all .2s;
+
+	&:hover {
+		color: white;
+		background: #0c6ac6;
+		border-color: #0c6ac6;
+	}
+
+	&:before {
+		content: '';
+		display: block;
+		position: absolute;
+		background: transparent url(/images/uploading.svg) no-repeat scroll center center;
+		background-size: 16px 16px;
+		width: 16px;
+		height: 16px;
+		left: 16px;
+		top: 10px;
+	}
+}

@@ -1,0 +1,20 @@
+.button {
+	color: #000;
+	text-transform: uppercase;
+	font-family: inherit;
+	font-weight: 700;
+
+	border: 1px solid #ccc;
+	border-radius: 20px;
+	padding: 11px 22px;
+	cursor: pointer;
+	text-decoration: none;
+	background: #fff;
+	outline: none;
+
+	transition: color .2s;
+
+	&:hover {
+		color: #0081ff;
+	}
+}
